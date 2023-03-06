@@ -1,7 +1,6 @@
-public class PrimeExample{    
- public static void main(String args[]){    
+public class PrimeExample2{    
+static void checkPrime(int n){  
   int i,m=0,flag=0;      
-  int n=3;//it is the number to be checked    
   m=n/2;      
   if(n==0||n==1){  
    System.out.println(n+" is not prime number");      
@@ -15,5 +14,11 @@ public class PrimeExample{
    }      
    if(flag==0)  { System.out.println(n+" is prime number"); }  
   }//end of else  
+}  
+ public static void main(String args[]){    
+  checkPrime(1);  
+  checkPrime(3);  
+  checkPrime(17);  
+  checkPrime(20);  
 }    
-}   
+}     
